@@ -23,9 +23,6 @@ jobs:
         uses: ./.github/actions/godot-cache
         continue-on-error: true
 
-      - name: Setup python and scons
-        uses: ./.github/actions/godot-deps
-
       - name: Compilation (arm64)
         uses: ./.github/actions/godot-build
         with:
